@@ -1,0 +1,20 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+.folio-list {
+
+}
+
+.folio-list img{
+  width:100%;
+
+}
+
+.folio-item {
+  margin:2em 0 1em;
+  padding-bottom:1em;
+  border-bottom:1px solid #efefef;
+}

@@ -1,0 +1,28 @@
+<header class="jumbotron"><h1 class="centered">My Folio Components</h1></header>
+  <div class=" container-fluid">
+    <div class="folio-form col-md-3">
+      <form class="well" (submit)='addFolioItem($event)'>
+        <div class="form-group">
+          <input type="text" [(ngModel)]="title" class="form-control" name="title" placeholder="Title">
+          <br />
+          <textarea type="text" [(ngModel)]="body" class="form-control" name="body" placeholder="Add a Description"></textarea>
+          <br />
+          <input type="text" [(ngModel)]="imageUrl" class="form-control" name="imageUrl" placeholder="Paste an image URL">
+          <br />
+          <button class="btn btn-danger" value="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+      <div class="folio-list col-md-8">
+        <div class="folio-item row" *ngFor="let item of folioitems">
+          <div class="col-md-1">
+            <img [src]="item.imageUrl">
+          </div>
+          <div class="col-md-7">
+            <h3>{{ item.title }}</h3>
+          </div>
+          <button class="btn btn-danger" (click)="removeFolio(item._id)" value="delete">X</button>
+        </div>
+
+      </div>
+  </div>

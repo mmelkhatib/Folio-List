@@ -1,0 +1,21 @@
+{
+  "name": "folio",
+  "description": "a simple demo task manager",
+  "main": "server.js",
+  "authors": [
+    "Mohammed El-Khatib <mmelkhatib@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha"
+  }
+}
